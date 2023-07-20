@@ -337,13 +337,19 @@ nav.sticky .nav__link:hover{
 
 .footer{
     background: #ff0000;
-    padding: 25px 0;
+    padding-bottom: 75px ;
+    padding-top: 5px;
+    display: flex; /* Встановлюємо flexbox для вирівнювання елементів по вертикалі */
+    flex-direction: column; /* Вирівнювати елементи по вертикалі стовпчиком */
+    align-items: center;
 }
 .foot__text, .foot__title{
     text-align: center;
+    top: 50%;
     font-weight: 500;
     color: #ccc !important;
-    padding: 5px 0;
+    padding: 14px 0;
+    
 }
 .foot__text a, .foot__title a{
     color: #007635 !important;
@@ -354,7 +360,10 @@ nav.sticky .nav__link:hover{
 .social{
     display: flex;
     justify-content: center;
-    padding-top: 10px;
+    padding-top: 5px;
+   
+    flex-direction: row; /* Вирівнювати елементи по вертикалі стовпчиком */
+    align-items: center;
     color: #fff;
 }
 .social i{
